@@ -1,12 +1,12 @@
 local system = vim.loop.os_uname().sysname
 
 if vim.g.neovide then
-  vim.o.guifont = "JetBrainsMono Nerd Font Mono:h16"
+  vim.o.guifont = "JetBrainsMono Nerd Font Mono:h12"
   vim.g.neovide_no_idle = true
   vim.g.neovide_confirm_quit = true
   vim.g.neovide_fullscreen = false
   vim.g.neovide_remember_window_size = true
-  vim.g.neovide_input_macos_option_key_is_meta = "only_left"
+  vim.g.neovide_input_macos_option_key_is_meta = "both"
   vim.g.neovide_cursor_vfx_mode = "railgun"
 
   if system == "Darwin" then
